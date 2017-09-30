@@ -10,7 +10,7 @@ verifier:
 
 platforms:
 - name: debian-8.9
-# - name: debian-9.0
+- name: debian-9.0
 
 suites:
 - name: default

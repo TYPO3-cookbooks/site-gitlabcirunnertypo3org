@@ -16,3 +16,6 @@ suites:
 - name: default
   run_list:
     - recipe[site-gitlabcirunnertypo3org]
+  attributes:
+    'site-gitlabcirunnertypo3org':
+      gitlab_url: http://localhost/

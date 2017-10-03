@@ -1,1 +1,1 @@
-default['site-gitlabcirunnertypo3org']['gitlab_url'] = 'http://srv180.typo3.org'
+default['site-gitlabcirunnertypo3org']['gitlab_url'] = 'https://git-t3o.typo3.org'

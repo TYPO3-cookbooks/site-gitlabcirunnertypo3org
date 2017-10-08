@@ -1,0 +1,24 @@
+concurrent = 10
+
+[[runners]]
+  name = "<%= @name %>"
+  url = "<%= @url %>"
+  token = "<%= @token %>"
+  executor = "docker"
+  tls-skip-verify = true
+  [runners.docker]
+    tls_verify = false
+    image = "docker:1"
+    privileged = true
+    disable_cache = false
+    volumes = [
+      "/cache",
+      "/tmp/bower",
+      "/tmp/composer/cache",
+      "/builds:/builds",
+      "/var/run/docker.sock:/var/run/docker.sock",
+      "/tmp:/tmp",
+      "/root/.ssh:/root/.ssh"
+    ]
+  [runners.cache]
+    Insecure = false

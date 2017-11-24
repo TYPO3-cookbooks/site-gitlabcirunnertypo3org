@@ -10,7 +10,7 @@ supports         "debian",     "> 8.0"
 
 depends          "t3-base",    "~> 0.2.59"
 
-depends          "site-dockertypo3org", "~> 1.0.0"
+depends          "site-dockertypo3org", "~> 1.1.0"
 depends          "t3-chef-vault",       "~> 1.0.0"
 
 depends          "gitlab-ci-runner", "= 1.4.0"
